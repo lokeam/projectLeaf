@@ -1,0 +1,9 @@
+.featured__wrapper {
+  border: 10px solid green;
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 6.67%;
+  grid-template-columns: repeat(4,1fr)
+}

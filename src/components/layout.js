@@ -9,8 +9,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header";
-import Masthead from "./masthead";
+import Header from "./header/header";
+import Masthead from "./masthead/masthead";
+import Featured from "./featured/featured";
 import "./layout.css";
 
 const Layout = ({ children }) => {
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Masthead />
+      <Featured />
       <div
         style={{
           margin: `0 auto`,
@@ -40,7 +42,8 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+
+          <p>hand crafted by Ahn Ming Loke</p>
         </footer>
       </div>
     </>

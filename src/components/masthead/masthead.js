@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./masthead.scss";
 
 const Masthead = () => (
     <div className="masthead__wrapper">
