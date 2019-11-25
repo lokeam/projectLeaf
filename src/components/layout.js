@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header/header";
 import Masthead from "./masthead/masthead";
 import Featured from "./featured/featured";
+import Gallery from "./gallery/gallery";
+import Footer from "./footer/footer";
 import "./layout.css";
 
 const Layout = ({ children }) => {
@@ -30,6 +32,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <Masthead />
       <Featured />
+      <Gallery />
       <div
         style={{
           margin: `0 auto`,
@@ -39,13 +42,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-
-          <p>hand crafted by Ahn Ming Loke</p>
-        </footer>
       </div>
+      <Footer />
     </>
   )
 }

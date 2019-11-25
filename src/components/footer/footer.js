@@ -5,7 +5,7 @@ import styles from "./footer.scss";
 const Footer = () => (
   <footer className="footer__wrapper">
     <div className="footer__copy">
-      <p>Hand crafted by Ahn Ming Loke</p>
+      <p>Footer copy</p>
     </div>
     <ul className="footer__social">
       {/*map social items into <li className="footer__social__item">gitHub</li> */}
@@ -14,12 +14,14 @@ const Footer = () => (
 );
 
 Footer.propTypes = {
+  copy: PropTypes.string,
   gitHub: PropTypes.string,
   linkedIn: PropTypes. string,
   cv: PropTypes.string
 }
 
 Footer.defaultProps = {
+  copy: ``,
   gitHub: ``,
   linkedIn: ``,
   cv: ``
